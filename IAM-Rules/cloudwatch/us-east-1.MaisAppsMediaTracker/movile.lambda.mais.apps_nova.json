@@ -1,0 +1,92 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:EnableAlarmActions",
+                "cloudwatch:DisableAlarmActions",
+                "cloudformation:DescribeStackResources",
+                "cloudwatch:SetAlarmState"
+            ],
+            "Resource": "arn:aws:lambda:us-east-1:529225399032:function:MaisAppsMediaTracker"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "kms:List*",
+            "Resource": "arn:aws:lambda:us-east-1:529225399032:function:MaisAppsMediaTracker"
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": "lambda:*",
+            "Resource": "arn:aws:lambda:us-east-1:529225399032:function:MaisAppsMediaTracker"
+        },
+        {
+            "Sid": "VisualEditor3",
+            "Effect": "Allow",
+            "Action": [
+                "iam:Get*",
+                "iam:List*"
+            ],
+            "Resource": "arn:aws:lambda:us-east-1:529225399032:function:MaisAppsMediaTracker"
+        },
+        {
+            "Sid": "VisualEditor4",
+            "Effect": "Allow",
+            "Action": [
+                "sns:Get*",
+                "sns:List*"
+            ],
+            "Resource": "arn:aws:lambda:us-east-1:529225399032:function:MaisAppsMediaTracker"
+        },
+        {
+            "Sid": "VisualEditor5",
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:Put*",
+                "cloudwatch:Get*",
+                "cloudwatch:Describe*",
+                "cloudwatch:ListMetrics"
+            ],
+            "Resource": "arn:aws:lambda:us-east-1:529225399032:function:MaisAppsMediaTracker"
+        },
+        {
+            "Sid": "VisualEditor6",
+            "Effect": "Allow",
+            "Action": "autoscaling:Describe*",
+            "Resource": "arn:aws:lambda:us-east-1:529225399032:function:MaisAppsMediaTracker"
+        },
+        {
+            "Sid": "VisualEditor7",
+            "Effect": "Allow",
+            "Action": [
+                "cloudfront:Update*",
+                "cloudfront:Get*",
+                "cloudfront:List*"
+            ],
+            "Resource": "arn:aws:lambda:us-east-1:529225399032:function:MaisAppsMediaTracker"
+        },
+        {
+            "Sid": "VisualEditor8",
+            "Effect": "Allow",
+            "Action": [
+                "logs:ListTagsLogGroup",
+                "logs:Describe*",
+                "logs:StartQuery",
+                "logs:TestMetricFilter",
+                "logs:StopQuery",
+                "logs:FilterLogEvents",
+                "logs:Get*",
+                "logs:ListLogDeliveries"
+            ],
+            "Resource": [
+                "arn:aws:logs:us-east-1:*:log-group:/aws/lambda/us-east-1.MaisAppsMediaTracker:*:*",
+                "arn:aws:logs:us-east-1:529225399032:log-group:/aws/lambda/us-east-1.MaisAppsMediaTracker:*:*",
+                "arn:aws:logs:us-east-1:529225399032:log-group:/aws/lambda/us-east-1.MaisAppsMediaTracker"
+            ]
+        }
+    ]
+}
